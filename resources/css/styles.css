@@ -1,0 +1,245 @@
+body {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+h1 {
+    color:rgb(9, 51, 128);
+    font-size: 1rem;
+    display: none;
+    margin-bottom: -5px;
+    
+
+}
+
+h2 {
+    width: 100%;
+    text-align: center;
+    background-color:darkcyan;
+    color: white;
+    border-radius: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    
+  }
+  
+
+/* Navigation*/
+nav {
+    display: flex;
+    text-align:center;
+    justify-content: flex-end;
+   
+    border-bottom: 2px solid rgb(22, 72, 114);
+    
+   
+  
+}
+
+nav ul li {
+    display: inline-block;
+    list-style-type: none;
+    border: 1px solid rgb(29, 110, 185);
+    border-radius: 5px;
+    background-color: white;
+    color:rgb(29, 110, 185);
+    width: 100px;
+    height: 25px;
+    padding-top: 7px;
+    margin: 5px;
+    font-size: 1.1rem;
+}
+
+nav ul li:hover, a:hover {
+    background-color: rgb(156, 178, 224);
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+
+
+/*Introduction*/
+.about {
+    /*border: 1px solid lightskyblue;*/
+    border-radius: 5px;
+    
+    font-size: 1.3rem;
+    line-height: 1.8;
+    padding: 40px;
+    min-height: 400px;
+}
+
+.about img {
+    width: 450px;
+    height: auto;
+    margin: 20px;
+    margin-top: -100px;
+    border-radius: 5px;
+    float: left;
+}
+
+.about p {
+    margin-left: 500px;
+    color:rgb(22, 72, 114);
+}
+
+#contacts-img {
+    margin: 20px;
+}
+
+/*Project heading*/
+
+#projects {
+    clear:both;
+}
+
+#projects h2 {
+    background-color:rgb(202, 187, 51);
+}
+
+/*Projects section*/
+.projects {
+    display: flex;
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.project {
+    border: 2px solid rgb(202, 187, 51);
+    border-radius: 10px;
+    width: 30%;
+    min-width: 320px;
+    padding: 20px;
+    margin: 10px;
+    color:  black;
+    height: 360px;
+}
+
+.project p {
+    color: rgb(71, 74, 88);
+    font-size: 1rem;
+}
+
+.content {
+    width: 80%;
+    min-width: 280px;
+    max-width: 400px;
+    border-radius: 5px;
+    margin: 20px auto;
+    height: auto;
+    padding: 5px;
+}
+
+.content img {
+    width: 100%;
+    height: auto;
+}
+
+/*Message Generator: Astro Oracle*/
+.oracle {
+    background-color: rgb(36, 60, 105);  
+    height: 200px;
+}
+
+.oracle h4 {
+    font-size: 2.5rem;
+    color: rgb(104, 143, 214);
+    margin: 0 auto;
+    font-family: Playball, "Times New Roman", serif;
+}
+
+.oracle p {
+    color: white;
+    padding: 25px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+#oracle-button {
+    background-image: url("../images/stars.gif");
+    border-radius: 50%;
+    border: 2px solid rgb(156, 178, 224);
+    width: 70%;
+    height: 70px;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+    color:rgb(104, 143, 214);
+    font-weight: bold;
+    font-size: larger;
+    margin: 10px auto;
+    
+}
+
+/*skills*/
+
+#skills h2 {
+    background-color: rgb(103, 114, 41);
+}
+
+#skills a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: rgb(71, 74, 88);
+   ;
+}
+
+/*contacts*/
+
+#contacts h2 {
+    background-color: darkcyan;
+}
+
+#contacts-h1 {
+    display: inline-block;
+}
+
+
+/*footer*/
+footer {
+    height: 80px;
+    width: 100%;
+    background-color: rgb(22, 72, 114);
+    text-align: center;
+    padding-top: 20px;
+    color: rgb(168, 207, 240);
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
+    .about img {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        border-radius: 5px;
+        float: none;
+        margin-top: -10px;
+    }
+    .about p {
+        margin-left: 20px;
+    }
+
+    nav {
+        display: flex;
+        text-align:center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    nav ul {
+        padding-left: 0px;
+    }
+
+    #li-about {
+        display: none;
+    }
+
+    h1 {
+        display: block;
+    }
+}

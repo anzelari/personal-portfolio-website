@@ -1,3 +1,5 @@
+//navigation
+
 let navLinks = ['li-about', 'li-projects', 'li-skills', 'li-contacts', 'about-p'];
 
 function changeBackground(event) {
@@ -16,3 +18,19 @@ function changeBackground(event) {
 }
 
 addEventListener('mouseover', changeBackground);
+
+//Logo 
+
+function changeSizeColor(event) {
+    logo.innerHTML = "Anzela Rizakova";
+    logo.style.color = "blue";
+};
+
+let logo = document.getElementById('logo');
+logo.addEventListener('mouseover', changeSizeColor);
+logo.addEventListener('mouseout', () => {
+    logo.style.color = "";
+    logo.innerHTML = "An{Ri}coding";
+
+});
+
